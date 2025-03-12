@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
+    <title>Dashboard</title>
+</head>
+<body>
+    
+    <div class="main">
+        <h1 class="head-name1">Dashboard</h1>
+        <div class="cards">
+            <div class="card">
+                <div class="card-content">
+                    <div class="number"></div>
+                    <div class="card-name">Lightbulb On</div>
+                </div>
+                <div class="icon-box">
+                    <svg> <circle cx="38" cy="38" r="36"></circle></svg>
+                    <span class="material-icons-sharp icons">lightbulb</span>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-content">
+                    <div class="number" id="energy"></div>
+                    <div class="card-name">Sum Curent</div>
+                </div>
+                <div class="icon-box">
+                    <svg><circle cx="38" cy="38" r="36"></circle></svg>
+                    <span class="material-icons-sharp icons">electric_meter</span>
+                </div>
+                
+            </div>
+            <div class="card">
+                <div class="card-content">
+                    <div class="number" id ="thb" class="currency"></div>
+                    <div class="card-name">Sum Money</div>
+                </div>
+                <div class="icon-box">
+                    <svg><circle cx="38" cy="38" r="36"></circle></svg>
+                    <span class="material-icons-sharp icons">payments</span>
+                </div>
+            </div>
+        </div>
+        <div class="charts">
+            <div class="chart">
+                <h2>Realtime Current in Today(Kwh)</h2>
+                <canvas id="barChart"></canvas>
+            </div>
+            <div class="chart">
+                <h2>Total Lightbulbs</h2>
+                <canvas id="doughnutChart"></canvas>
+            </div>
+    </div>
+    </div>
+
+</body>
+</html>

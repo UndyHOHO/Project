@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
+    <title>Analytics</title>
+</head>
+<body class="analytic">
+        <div class="main1">
+            <h1 class="head-name2">Analytics</h1>
+            <main class="table">
+                <section class="table__header">
+                    <h1>All Devices</h1>
+                </section>
+                <section class="table__body">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th> Names Devices </th>
+                                <th> Status </th>
+                                <th> Online Time(Second) </th>
+                                <th> Current(kWh) </th>
+                                <th> <span class="currency"></span> </th>
+                                <th> Life Time(Second) </th>
+                            </tr>
+                        </thead>
+                        <tbody id="device-table-body">
+                            <!-- JavaScript จะเติมข้อมูลที่นี่ -->
+                        </tbody>
+                    </table>
+                </section>
+                
+            </main>
+            <div class="card1">
+                <div class="card">
+                    <div class="card-content">
+                        <div class="number1">Electricity Total Usage</div>
+                        <div class="card-name1"><span id="total-usage">0</span></div>
+                    </div>
+                    <div class="icon-box">
+                        <svg> <circle cx="38" cy="38" r="36"></circle></svg>
+                        <span class="material-icons-sharp icons">bolt</span>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <div class="number1">Electricity Cost</div>
+                        <div class="card-name1" ><span id="total-cost">0</span></div>
+                    </div>
+                    <div class="icon-box">
+                        <svg> <circle cx="38" cy="38" r="36"></circle></svg>
+                        <span class="material-icons-sharp icons">payment</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+</body>
+</html>
